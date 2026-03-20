@@ -15,3 +15,16 @@ npx eas-cli@latest init
 npx expo start
 ```
 Remember you need to install expo app and connect with same wifi and scan QR then you can see changes on phone real time changes.
+
+---
+
+## How to create build
+Run this command to install eas-cli
+```
+npm install -g eas-cli
+```
+No you can run build command
+```
+eas build
+```
+Then i will ask `All`, `Android` and `ios` then select `All` because we want to create build for both.
