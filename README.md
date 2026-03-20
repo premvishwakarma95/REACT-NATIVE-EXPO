@@ -28,22 +28,40 @@ npm install -g eas-cli
 No you can run build command
 ```
 eas build
+
+// Separate buld command
+// 🤖 Android Build
+// .apk for testing, .aab for producton.
+npx eas build -p android --profile preview      // 👉 APK (for testing)
+npx eas build -p android --profile production   // 👉 AAB (for Play Store)
+
+🍎 iOS Build `.ipa → upload to Apple App Store`
+npx eas build -p ios
+
+// 👉 Will require:
+// Apple ID
+// Apple Developer account
 ```
 Then i will ask `All`, `Android` and `ios` then select `All` because we want to create build for both.
 
 ## Need to ask client
 ```
-Hi, as we are preparing for app deployment, I need the following details:
+Hi, I’ve started working on generating Android and iOS builds using Expo.
 
-1. Access to your Google Play Store and Apple App Store developer accounts (or please add me as a developer)
-2. App name, description, category, and keywords
-3. App icon (1024x1024) and splash screen (if available)
-4. App screenshots for listing
-5. Privacy Policy URL and Terms & Conditions (if available)
-6. Production API URL and any required API keys (Firebase, payment, etc.)
-7. Test login credentials for app review
-8. Confirmation of app permissions (camera, location, etc.)
-9. Final confirmation on app name and version
+For Android build, I can proceed using EAS without any issues.
 
-This will help us complete the deployment smoothly.
+For iOS build, I need a few details:
+
+1. Apple Developer account access (or should I use a company account?)
+2. Apple ID for signing the app
+3. Any existing bundle identifier or should I create a new one?
+
+Also, please confirm:
+
+* App name (final)
+* Package/bundle identifier (if predefined)
+* Whether we want APK or AAB for Android
+
+Let me know so I can proceed with both builds smoothly.
+
 ```
