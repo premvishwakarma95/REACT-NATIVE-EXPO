@@ -14,3 +14,4 @@ npx eas-cli@latest init
 ```bash
 npx expo start
 ```
+Remember you need to install expo app and connect with same wifi and scan QR then you can see changes on phone real time changes.
