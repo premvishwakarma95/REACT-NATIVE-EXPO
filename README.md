@@ -1,5 +1,7 @@
 # REACT-NATIVE-EXPO
 
+React native works same as react and routing same as nextjs file based and file sytem nextjs as and css different and html tags different.
+
 ## Get the starter project
 Run the following command to clone a starter project locally:
 
